@@ -5,6 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Echo Pong</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: #ffd6eb; /* soft pink */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      color: #333;
+    }
+
+    h1 {
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      margin: 0;
+      text-align: center;
+      color: #ff4f9e;
+      text-shadow: 0 0 10px rgba(255, 79, 158, 0.4);
+      font-weight: 600;
+    }
+
+    #iframe-container {
+      width: 650px;
+      height: 430px;
+      max-width: 95vw;
+      max-height: 90vh;
+      border: 2px solid #ff9acb;
+      border-radius: 15px;
+      background: white;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #iframe-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .blurb {
+      width: min(760px, 92vw);
+      background: #fff7fb;
+      border: 1px solid #ffb9db;
+      border-radius: 12px;
+      padding: 16px 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .blurb h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #ff4f9e;
+    }
+
+    a {
+      color: #d81b60;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <h1>Echo Pong</h1>
